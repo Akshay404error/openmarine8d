@@ -1,0 +1,5 @@
+timestamp,query_type,num_matches,top_match_name,top_match_distance
+2025-11-08 23:16:18,📁,1,Akshay,N/A
+2025-11-08 23:43:53,📷,1,Akshay,0.2001
+2025-11-08 23:57:29,📷,4,Akshay,0.0299
+2025-11-08 23:57:44,📁,4,Vijay ,N/A

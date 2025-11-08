@@ -1,0 +1,147 @@
+================================================================================
+AI FACIAL RECOGNITION SYSTEM - INSTALLATION GUIDE
+Missing Persons & Unidentified Bodies Database
+================================================================================
+
+SYSTEM REQUIREMENTS:
+- Python 3.8 or higher
+- pip package manager
+- 4GB RAM minimum (8GB recommended)
+- Webcam (optional, for camera capture feature)
+- Windows/Linux/macOS
+
+================================================================================
+INSTALLATION STEPS:
+================================================================================
+
+1. NAVIGATE TO PROJECT DIRECTORY
+   
+   cd missing_person_finder
+
+
+2. INSTALL DEPENDENCIES
+   
+   pip install -r requirements.txt
+   
+   Note: This will install:
+   - streamlit (Web UI framework)
+   - face-recognition (Face detection and encoding)
+   - opencv-python (Image processing)
+   - faiss-cpu (Vector similarity search)
+   - numpy, pandas (Data handling)
+   - Pillow (Image manipulation)
+   - dlib (Face recognition backend)
+
+
+3. TROUBLESHOOTING DLIB INSTALLATION (if needed)
+   
+   If dlib fails to install, try:
+   
+   Windows:
+   pip install cmake
+   pip install dlib
+   
+   Linux (Ubuntu/Debian):
+   sudo apt-get install build-essential cmake
+   sudo apt-get install libopenblas-dev liblapack-dev
+   pip install dlib
+   
+   macOS:
+   brew install cmake
+   pip install dlib
+   
+   Alternative: Use pre-built wheels
+   pip install dlib-binary
+
+
+4. VERIFY INSTALLATION
+   
+   python -c "import streamlit; import face_recognition; import faiss; print('All packages installed successfully!')"
+
+
+5. RUN THE APPLICATION
+   
+   streamlit run app.py
+   
+   The application will automatically open in your default browser at:
+   http://localhost:8501
+
+
+================================================================================
+FIRST TIME SETUP:
+================================================================================
+
+1. The application will create necessary directories automatically:
+   - data/known_faces/  (stores face images)
+   - data/index/        (stores FAISS index)
+   - logs/              (stores search logs)
+
+2. Add your first person:
+   - Go to "Add New Person" page
+   - Upload an image or capture from camera
+   - Enter person's name/ID
+   - Click "Add to Database"
+
+3. Test the search:
+   - Go to "Search Face" page
+   - Upload a test image
+   - Click "Search Database"
+   - View matching results
+
+
+================================================================================
+RUNNING THE APPLICATION:
+================================================================================
+
+Command: streamlit run app.py
+
+The app will start on: http://localhost:8501
+
+To stop: Press Ctrl+C in the terminal
+
+
+================================================================================
+FEATURES INCLUDED:
+================================================================================
+
+✓ Face detection and recognition
+✓ Upload images or capture from webcam
+✓ FAISS-powered similarity search
+✓ Add new people dynamically
+✓ View database statistics
+✓ Search activity logging
+✓ Export logs to CSV
+✓ 100% offline operation
+✓ Privacy-safe (no cloud APIs)
+
+
+================================================================================
+QUICK COMMANDS:
+================================================================================
+
+Install:     pip install -r requirements.txt
+Run:         streamlit run app.py
+Stop:        Ctrl+C
+Test:        python -c "import streamlit; import face_recognition"
+
+
+================================================================================
+SUPPORT:
+================================================================================
+
+For detailed documentation, see README.md
+For quick start guide, see QUICKSTART.md
+For troubleshooting, check the README.md troubleshooting section
+
+
+================================================================================
+PRIVACY NOTICE:
+================================================================================
+
+This system operates entirely offline. No data is sent to external servers.
+All face data, embeddings, and logs are stored locally on your machine.
+
+
+================================================================================
+Ready to use! 🎉
+================================================================================

@@ -1,0 +1,9 @@
+streamlit==1.28.0
+face-recognition==1.3.0
+opencv-python==4.8.1.78
+faiss-cpu==1.7.4
+numpy==1.24.3
+pandas==2.0.3
+Pillow==10.0.1
+dlib==19.24.2
+cmake==3.27.7
