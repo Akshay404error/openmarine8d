@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 Documentation
+    url: https://github.com/Akshay404error/OCR-library-python#readme
+  - name: 🐛 Report a Bug
+    url: https://github.com/Akshay404error/OCR-library-python/issues/new?assignees=&labels=bug&template=bug_report.md
+  - name: 💡 Request a Feature
+    url: https://github.com/Akshay404error/OCR-library-python/issues/new?assignees=&labels=enhancement&template=feature_request.md
+  - name: ❓ Ask a Question
+    url: https://github.com/Akshay404error/OCR-library-python/issues/new?assignees=&labels=question&template=question.md
